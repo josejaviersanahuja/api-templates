@@ -33,7 +33,8 @@ router.get("/", async function (req, res, next) {
         res.end();
       }
     } catch (error) {
-      res.sendStatus(403)
+      res.writeHead(403)
+      res.end()
     }
   } else {
     res.writeHead(400);
@@ -165,7 +166,8 @@ router.delete("/",async function (req, res, next) {
         res.end();
       }
     } catch (error) {
-      res.sendStatus(403)
+      res.writeHead(403)
+      res.end()
     }
   } else {
     res.writeHead(400);
