@@ -5,9 +5,10 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "cross-env NODE_ENV=development nodemon ./bin/www",
-    "test": "cross-env NODE_ENV=testing nodemon ./bin/www"
+    "test": "cross-env NODE_ENV=testing node test"
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "~4.16.1",
     "express-rate-limit": "^5.3.0",
     "express-slow-down": "^1.4.0",
@@ -19,7 +20,6 @@
     "nodemailer": "^6.6.3"
   },
   "devDependencies": {
-    "dotenv": "^10.0.0",
     "cross-env": "^7.0.3",
     "nodemon": "^2.0.12"
   }

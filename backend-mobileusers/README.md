@@ -35,6 +35,8 @@
   <li>"http-errors": "~1.6.3",</li>
   <li>"mongoose": "^5.13.7",</li>
   <li>"morgan": "~1.9.1",</li>
+  <li>"express-rate-limit": "^5.3.0",</li>
+  <li>"express-slow-down": "^1.4.0",</li>
 </ol>
 <b><i>Development</i></b>
 <ol>
